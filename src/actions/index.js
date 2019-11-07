@@ -1,6 +1,5 @@
-export const setUser = (user) => {
-  return {
-    type: "SET_USER",
-    user
-  };
-}
+import { setUserAction } from './userActions'
+import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from './mainActions'
+
+
+export { setUserAction, setMainAction, setMainToDoPageAction, setMainAboutPageAction }

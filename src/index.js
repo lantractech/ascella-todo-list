@@ -2,19 +2,23 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import store, { history } from './store';
-import Home from './containers/Home';
+import Main from './containers/Main';
+import './resources/index.css'
 
 const rootElement = document.getElementById('root');
 
 render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <div>
-                <Route exact path="/" component={Home} />
-            </div>
+            <Switch>
+                <Route path="/" exact component={Main} />
+                <Route path="/todo" component={Main} />
+                <Route path="/about" render={(props) => <Main {...props} />} />
+                <Route render={(props) => <Main {...props} page='404' pageTitle='404 Page' />} />
+            </Switch>
         </ConnectedRouter>
     </Provider>
     , rootElement
