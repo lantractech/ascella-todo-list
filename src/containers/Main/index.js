@@ -11,6 +11,17 @@ class Main extends Component {
     super(props);
 
     // set page info if pre-defined pathname
+    this.setPage()
+  }
+
+  componentDidUpdate = (prevProps,prevState) => {
+    // Typical usage (don't forget to compare props):
+    if (this.props.location !== prevProps.location) {
+      this.setPage()
+    }
+  }
+
+  setPage() {
     let page = _.get(this.props, 'location.pathname')
     if (page) {
       page = page.replace(/\//, '')
