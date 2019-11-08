@@ -14,7 +14,6 @@ class Navigation extends Component {
 
     handleTabChange = (value) => {
         if (value === 0) {
-            console.log(this.props)
             this.props.setMainToDoPage()
             this.props.history.push('/todo')
         }

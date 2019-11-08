@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from '../../actions'
+import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from '../actions'
 
 class ToDo extends Component {
 

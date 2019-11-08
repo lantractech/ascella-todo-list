@@ -6,13 +6,13 @@ const styles = () => ({
     header: {
         paddingLeft: 0,
         paddingRight: 0,
-        minHeight: 120,
+        minHeight: 80,
         width: '100%',
         background: '#5cb85c',
         boxShadow: 'inset 0 8px 8px -8px rgba(0,0,0,.3), inset 0 -8px 8px -8px rgba(0,0,0,.3)'
     },
     headerText: {
-        marginTop: 30,
+        marginTop: 10,
         color: '#fff',
         fontWeight: 'bold',
         textShadow: '0 1px 3px rgba(0,0,0,.3)'

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash'
-import { Banner, Header, Navigation } from '../../components'
-import ToDo from '../ToDo'
-import About from '../About'
-import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from '../../actions'
+import { Banner, Header, Navigation } from '../components'
+import ToDo from './ToDo'
+import About from './About'
+import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from '../actions'
 
 class Main extends Component {
   constructor(props) {

@@ -15,7 +15,7 @@ render(
         <ConnectedRouter history={history}>
             <Switch>
                 <Route path="/" exact component={Main} />
-                <Route path="/todo" component={Main} />
+                <Route path="/todo" render={(props) => <Main {...props} />} />
                 <Route path="/about" render={(props) => <Main {...props} />} />
                 <Route render={(props) => <Main {...props} page='404' pageTitle='404 Page' />} />
             </Switch>
