@@ -1,5 +1,5 @@
-import { setUserAction } from './userActions'
+import { setListAction } from './listActions'
 import { setMainAction, setMainToDoPageAction, setMainAboutPageAction } from './mainActions'
 
 
-export { setUserAction, setMainAction, setMainToDoPageAction, setMainAboutPageAction }
+export { setListAction, setMainAction, setMainToDoPageAction, setMainAboutPageAction }
